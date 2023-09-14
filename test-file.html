@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>discount price</title>
+
+    <script>
+        function Discount() {
+    //the price entered        
+    let text = parseFloat(document.getElementById("price").value);
+    //converting the text to price
+    let price = text;
+    //finding out what day it is
+    var dayOfWeek = new Date().getDay()
+    //using logic to find the total
+    if (price > 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
+                total = price - (price*.10);
+    }
+    else {
+                total = price
+    }
+    
+
+    document.getElementById("output").innerHTML = total;
+
+        }
+      
+    </script>
+</head>
+
+<body>
+    enter price of cart <input type="text" id="price">                       
+    <button type="button" onclick="Discount()">final price</button>
+    <div id="output"></div>
+</body>
+</html>
