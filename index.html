@@ -6,26 +6,27 @@
     <title>Gabriel Jones - WDD 230 - Web Frontend Development</title>
     <meta name="WDD 230 - Web Frontend Development Gabriel Jones course assignment portal">
     <meta athor="Gabriel Jones">
+    <link rel="stylesheet" href="styles\base.css">
 </head>
 
 <body>
     <header>
-        <img src="C:\Users\user\Documents\GitHub\wdd230\images\Gabe's head shot.jpg" alt="Gabe in a blue shirt" width="100" height="105">
+        <img id="gabe" src="C:\Users\user\Documents\GitHub\wdd230\images\Gabe's head shot.jpg" alt="Gabe in a blue shirt" width="100" height="105">
         <h1>Gabriel Jones</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="chamber/siteplan.html">site plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://my.byui.edu/" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng" target="_blank">1 Nephi 1</a>
+        <a class="button" href="#">Home</a>
+        <a class="button" href="chamber/siteplan.html">site plan</a>
+        <a class="button" href="chamber/">Chamber</a>
+        <a class="button" href="https://my.byui.edu/" target="_blank">BYU-Idaho</a>
+        <a class="button" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng" target="_blank">1 Nephi 1</a>
 
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section id="card">
-            <h3>Learning Activities</h3>
-            <ol>
+        <section class="card">
+            <h3 id="topbox1">Learning Activities</h3>
+            <ol id="box1">
                 <li>
                     <a href=""></a> 
                 </li>
@@ -58,14 +59,18 @@
                 </li>
               </ol>
         </section>
-        <section id="card">
-            <h3>Information</h3>
-            <p>weather - clear</p>
-            <p>1 visiter in 24 hours</p>
+        <section class="card">
+            <h3 id="topbox2">Information</h3>
+            <div id="box2">
+                <p>weather - clear</p>
+                <p>1 visiter in 24 hours</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p></p>
+        <p>Branson Missouri</p>
+        <p>united states of america</p>
+        <img id="flag" src="images\Flag-United-States-of-America.webp" alt="USA flag" width="25%" height="25%">
     </footer>
 
 </body>
