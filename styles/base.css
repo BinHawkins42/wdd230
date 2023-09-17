@@ -79,8 +79,13 @@ p {
 }
 
 h1 {
+
 margin-left: 10%;
 margin-top: 8%;
 margin-right: 10%;
 justify-items: center;
+}
+
+h1, h2, h3, p {
+    font-family: Arial, Helvetica, sans-serif;
 }
