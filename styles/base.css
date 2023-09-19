@@ -1,28 +1,25 @@
 body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    
 }
 
 header {
    display: flex;
     background-color: rgb(6, 85, 99);
-    grid-column: 2 / 4;
-    margin: 1%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 nav {
-    display: grid;
-    background-color:lightskyblue; 
-    grid-column: 2 / 3;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: 2 / 4;
-    margin: 1%;
+    display: flex;
+    flex-direction: column;
+
+
+
 }
 
 main {
 
     background-color: rgb(6, 85, 99);
-    grid-column: 2 / 4;
     margin: 1%;
 }
 
@@ -44,19 +41,20 @@ h3 {
 }
 
 footer {
+   display: flex;
+   flex-direction: column;
     background-color: black;
     color:rgb(255, 255, 255);
-    grid-column: 2 / 4;
     margin: 1%;
 }
 
 .button {
     text-align: center;
     background-color: rgb(6, 85, 99);
-    color:aqua;
-    grid-column: 2 / 4;
-    padding: 1%;
-    margin: 3%;
+    color:rgb(255, 255, 255);
+    padding: .5rem;
+    text-decoration: none;
+    font-size: larger;
 }
 
 h1, h2, h3 {
@@ -68,10 +66,14 @@ h1, h2 {
 }
 
 #gabe {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    margin-right: 10%;
+    margin-top: 2rem;
+    margin-left: 45rem;
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+}
+
+#flag {
+    padding-left: 2rem;
 }
 
 p {
@@ -79,11 +81,10 @@ p {
 }
 
 h1 {
+    font-size: 300%;
+    margin-top: 4rem;
+    margin-right: 2rem;
 
-margin-left: 10%;
-margin-top: 8%;
-margin-right: 10%;
-justify-items: center;
 }
 
 h1, h2, h3, p {
