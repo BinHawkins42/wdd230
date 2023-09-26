@@ -1,0 +1,40 @@
+@media screen and (min-width: 640px) {
+
+    body {
+
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #gabe {
+        margin-top: 5rem;
+        margin-left: 70%;
+        margin-bottom: 5rem;
+        margin-right: 0rem;
+        grid-column: 1/1;
+        
+    }
+
+    h1 {
+        font-size: 300%;
+        margin-top: 7rem;
+        margin-right: 50%;
+        grid-column: 2/2;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card {
+        grid-column: auto;
+    }
+
+    h2 {
+        grid-column: 1/3;
+    }
+}
