@@ -1,0 +1,22 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+section #color1 {
+    background-color: rgb(135, 206, 250);
+   margin-left: 35svw;
+   margin-right: 35svw;
+   padding: 2rem;
+}
+
+section #color2 {
+    background-color:rgb(0, 102, 0);
+    margin-left: 35svw;
+    margin-right: 35svw;
+    padding: 2rem;
+}
