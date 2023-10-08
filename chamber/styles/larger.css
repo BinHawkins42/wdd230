@@ -1,0 +1,110 @@
+@media screen and (min-width: 1090px) {
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing:border-box;
+    line-height: 1.75rem;
+    text-align: center;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#menu {
+    display: none;
+}
+
+header {
+    grid-column: 1/2;
+   margin-bottom: 3rem;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: unset;
+    grid-column: 2/4;
+    padding-bottom: 6rem;
+ 
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+main {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+footer {
+    background-color: #2E368F;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer p {
+    color: white;
+}
+li {
+    display: flex;
+    background-color: #2E368F;
+
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: .5rem;
+}
+
+a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.gallory {
+    grid-column: 3/4;
+    grid-row: 1/1;
+    margin: .2rem;
+    border-style: solid;
+    padding: .3rem;
+    background-color: white;
+
+}
+.gallory img {
+    max-width: 900px;
+}
+.article {
+    grid-column: 3/4;
+    grid-row: 2/2;
+    margin: .2rem;
+    border-style: solid; 
+    background-color: white;
+
+}
+.weather {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    margin: .2rem;
+    border-style: solid; 
+    background-color: white;
+
+}
+.events {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin: .2rem;
+    border-style: solid; 
+    padding: .3rem;
+    background-color: white;
+
+}
+
+
+}
+
