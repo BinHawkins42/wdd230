@@ -7,7 +7,6 @@ body {
     line-height: 1.75rem;
     text-align: center;
     background-image: url(images/shutterstock-1760533532-1.jpg);
-    background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
     font-family: 'Kanit', sans-serif;
     text-align: center;
@@ -19,6 +18,19 @@ header {
     margin-bottom: 3rem;
 }
 
+header object {
+    padding-top: 2rem;
+}
+
+header h1 {
+    display: none;
+}
+
+main {
+    background-color: white;
+    margin-top: 2rem;
+}
+
 #menu {
 	display: block;
 	font-size: 2rem;
@@ -27,7 +39,7 @@ header {
 	padding: .5rem .75rem;
 	background-color: #eee;
 	color: #000;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 
 #menu::before {
@@ -61,6 +73,7 @@ nav a:hover, nav a:active {
 .show ul {
 	display: block;
     list-style: none;
+    margin-top: 0rem;
 }
 
 .show ul li a {
@@ -72,7 +85,7 @@ nav a:hover, nav a:active {
     margin: .2rem;
     border-style: solid;
     padding: .3rem;
-    background-color: white;
+
 
 }
 
@@ -83,14 +96,14 @@ nav a:hover, nav a:active {
 
     margin: .2rem;
     border-style: solid; 
-    background-color: white;
+
 
 }
 .weather {
 
     margin: .2rem;
     border-style: solid; 
-    background-color: white;
+
 
 }
 .events {
@@ -98,7 +111,7 @@ nav a:hover, nav a:active {
     margin: .2rem;
     border-style: solid; 
     padding: .3rem;
-    background-color: white;
+ 
 
 }
 
@@ -117,4 +130,101 @@ footer div {
     flex-direction: row;
     justify-content: center;
 }
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    max-width: 75lvw;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: relative;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position:relative;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
