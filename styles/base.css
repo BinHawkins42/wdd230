@@ -11,6 +11,30 @@ header {
     
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+  }
+
+.herolabel {
+    position: absolute;
+    top: 480px;
+    left: 25px;
+    background: radial-gradient(#fff, #4d977e);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: .5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .10rem;
+    font-weight: 700;
+    font-size: .5rem;
+}
+
 #menu {
 	display: block;
 	font-size: 2rem;
