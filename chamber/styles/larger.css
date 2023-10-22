@@ -34,6 +34,7 @@ nav ul {
     text-align: center;
     flex-direction: row;
     padding-top: 3rem;
+    align-items: flex-start;
 }
 main {
     grid-column: 1/4;
@@ -96,6 +97,19 @@ a {
     border-style: solid; 
 
 
+}
+
+.weather div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather div p {
+  padding: .5rem;
+}
+
+.weather div #windchill{
+  padding-top: 1rem;
 }
 .events {
     grid-column: 1/2;

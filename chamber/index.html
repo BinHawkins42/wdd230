@@ -50,32 +50,57 @@
             <!-- Full-width images with number text -->
             <div class="mySlides">
             <div class="numbertext">1 / 6</div>
-                <img src="images/aquarium.jpg" style="width:100%" alt="the Aquarium on the Board Walk">
+                <picture>
+                    <source srcset="images/aquarium-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/aquarium-medium.webp" media="(max-width: 600px)">
+                    <img src="images/aquarium-large.webp" style="width:100%" alt="the Aquarium on the Board Walk">
+                </picture>
             </div>
-        
+
             <div class="mySlides">
             <div class="numbertext">2 / 6</div>
-                <img src="images/branson-1.jpg" style="width:100%" alt="Branson Ferris Wheel">
+                <picture>
+                    <source srcset="images/branson-1-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/branson-1-medium.webp" media="(max-width: 600px)">
+                    <img src="images/branson-1-large.webp" style="width:100%" alt="Branson Ferris Wheel">
+                </picture>
             </div>
         
             <div class="mySlides">
             <div class="numbertext">3 / 6</div>
-                <img src="images/branson-landing.jpg" style="width:100%" alt="Branson landing">
+                <picture>
+                    <source srcset="images/branson-landing-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/branson-landing-medium.webp" media="(max-width: 600px)">
+                    <img src="images/branson-landing-large.webp" style="width:100%" alt="Branson landing">
+                </picture>
             </div>
         
             <div class="mySlides">
             <div class="numbertext">4 / 6</div>
-                <img src="images/sdc-coster.jpg" style="width:100%" alt="silver dollar city">
+                <picture>
+                    <source srcset="images/sdc-coster-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/sdc-coster-medium.webp" media="(max-width: 600px)">
+                    <img src="images/sdc-coster-large.webp" style="width:100%" alt="silver dollar city">
+                </picture>   
             </div>
         
             <div class="mySlides">
             <div class="numbertext">5 / 6</div>
-                <img src="images/show-boat.jpg" style="width:100%" alt="show boat branson bell">
+            <picture>
+                <source srcset="images/show-boat-small.webp" media="(max-width: 400px)">
+                <source srcset="images/show-boat-medium.webp" media="(max-width: 600px)">
+                <img src="images/show-boat-large.webp" style="width:100%" alt="show boat branson bell">
+            </picture>
             </div>
         
             <div class="mySlides">
             <div class="numbertext">6 / 6</div>
-                <img src="images/wax-museum.jpg" style="width:100%" alt="hollywood wax museum">
+                <picture>
+                    <source srcset="images/wax-museum-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/wax-museum-medium.webp" media="(max-width: 600px)">
+                    <img src="images/wax-museum-large.webp" style="width:100%" alt="hollywood wax museum">
+                </picture>
+                
             </div>
         
             <!-- Next and previous buttons -->
@@ -90,22 +115,22 @@
             <!-- Thumbnail images -->
             <div class="row">
             <div class="column">
-                <img class="demo cursor" src="images/aquarium.jpg" style="width:100%" onclick="currentSlide(1)" alt="the Aquarium on the Board Walk">
+                <img class="demo cursor" src="images/aquarium-small.webp" style="width:100%" onclick="currentSlide(1)" alt="the Aquarium on the Board Walk">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/branson-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Branson Ferris Wheel">
+                <img class="demo cursor" src="images/branson-1-small.webp" style="width:100%" onclick="currentSlide(2)" alt="Branson Ferris Wheel">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/branson-landing.jpg" style="width:100%" onclick="currentSlide(3)" alt="Branson landing">
+                <img class="demo cursor" src="images/branson-landing-small.webp" style="width:100%" onclick="currentSlide(3)" alt="Branson landing">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/sdc-coster.jpg" style="width:100%" onclick="currentSlide(4)" alt="silver dollar city">
+                <img class="demo cursor" src="images/sdc-coster-small.webp" style="width:100%" onclick="currentSlide(4)" alt="silver dollar city">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/show-boat.jpg" style="width:100%" onclick="currentSlide(5)" alt="show boat branson bell">
+                <img class="demo cursor" src="images/show-boat-small.webp" style="width:100%" onclick="currentSlide(5)" alt="show boat branson bell">
             </div>
             <div class="column">
-                <img class="demo cursor" src="images/wax-museum.jpg" style="width:100%" onclick="currentSlide(6)" alt="hollywood wax museum">
+                <img class="demo cursor" src="images/wax-museum-small.webp" style="width:100%" onclick="currentSlide(6)" alt="hollywood wax museum">
             </div>
             </div>
         </div>
@@ -118,9 +143,15 @@
         <div class="weather">
             
             <h2>Local Weather Forcast</h2>
-            <img src="images/partly-cloudy-symbol-cloudy-clipart-256_256.png" alt="partly cloudy icon" width="100">
-            <p>64℉ with 40mph winds coming from the west.</p>
+            <img src="images/partly-cloudy.webp" alt="partly cloudy icon" width="100">
+            <div>
+            <p id="air-temp">76</p>
+            <p>℉</p> 
+            <p id="wind-speed">1</p>
+            <p>mph</p>
+            <p>windchill</p><div id="windchill"></div>
             <p>partly cloudy</p>
+            </div>
         </div>
         <!-- Local events -->
         <div class="events">
@@ -150,5 +181,6 @@
     <script src="scripts/ham-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/gallory.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

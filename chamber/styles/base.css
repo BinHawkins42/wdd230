@@ -6,8 +6,8 @@ body {
     box-sizing:border-box;
     line-height: 1.75rem;
     text-align: center;
-    background-image: url(images/shutterstock-1760533532-1.jpg);
-    background-repeat: no-repeat, repeat;
+    background-image: url(images/ozarks-background-large.webp);
+    background-repeat: no-repeat, no-repeat;
     font-family: 'Kanit', sans-serif;
     text-align: center;
 }
