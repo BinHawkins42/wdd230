@@ -37,7 +37,7 @@
                 <picture>
                     <source srcset="images/hero-small.webp" media="(max-width: 500px)">
                     <source srcset="images/hero-medium.webp" media="(max-with: 800px)">
-                    <img src="images/hero-large.webp" alt="San Diego California Temple" width="1200" loading="lazy">
+                    <img src="images/hero-large.webp" alt="San Diego California Temple" width="1200">
                 </picture>
                 <div class="herolabel">
                     <p>San Diego Temple</p>
@@ -61,7 +61,7 @@
                     <a href="lesson06/responsive-images.html">Lesson 6 responsive images</a> <a href="lesson03/images/landscape.webp">WebP</a>
                 </li>
                 <li>
-                    <a href=""></a> 
+                    <a href="lesson07/bom.html">Lesson 7 Web Storage API - localStorage</a> 
                 </li>
                 <li>
                     <a href=""></a> 
@@ -81,7 +81,7 @@
             <h3 id="topbox2">Information</h3>
             <div id="box2">
                 <p>weather - clear</p>
-                <p>1 visiter in 24 hours</p>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </div>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51217.84414536075!2d-93.30423197670112!3d36.64767772128121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf01e9c1f60ea9%3A0xf3370960da92ac34!2sBranson%2C%20MO%2065616!5e0!3m2!1sen!2sus!4v1695956982033!5m2!1sen!2sus" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -90,11 +90,12 @@
         <p id="copyright-date"></p>
         <p>Branson Missouri</p>
         <p>united states of america
-            <img id="flag" src="images/flag-united-states-of-america.webp" alt="USA flag" width="50" height="25">
+            <img id="flag" loading="lazy" src="images/flag-united-states-of-america.webp" alt="USA flag" width="50" height="25">
         </p>
         <p id="lastmodified"></p>
     </footer>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/ham_menu.js"></script>
+<script src="scripts/page-visits.js"></script>
 </body>
 </html>
