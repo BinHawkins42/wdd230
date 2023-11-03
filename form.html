@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Jones - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development Gabriel Jones course assignment portal">
+    <meta name="author" content="Gabriel Jones">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Gabriel Jones - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://binhawkins42.github.io/wdd230/">
+    <meta property="og:image" content="lesson03/images/landscape.webp">
+</head>
+
+<body>
+    <header>
+        <img id="gabe" src="images/gabes-head-shot.webp" alt="Gabe in a blue shirt" width="100">
+        <h1>Gabriel Jones</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul>
+            <li><a class="button" href="index.html">Home</a></li>
+            <li><a class="button" href="lesson03/chamber-site-plan.html">site plan</a></li>
+            <li><a class="button" href="chamber/index.html">Chamber</a></li>
+            <li><a class="button" href="form.html">Create account</a></li>
+            <li><a class="button" href="https://my.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a class="button" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng" target="_blank">1 Nephi 1</a></li>
+         </ul>
+    </nav>
+    <main>
+        <h1>Create an Account</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Account Info</legend>
+                <label class="top">User name*<input type="text" name="username" required></label>
+                <p id="formmessage"></p>
+                <label class="top">password<input type="password" id="password" name="pwd" pattern=".{8,}" title="Eight or more characters"></label>
+                <label class="top">Retype password<input type="password" id="password2" name="pwd"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label for="r" class="top">Rate the Page</label>
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submitBtn">
+
+        </form>
+    </main>
+    <footer>
+        <p id="copyright-date"></p>
+        <p>Branson Missouri</p>
+        <p>united states of america
+            <img id="flag" loading="lazy" src="images/flag-united-states-of-america.webp" alt="USA flag" width="50" height="25">
+        </p>
+        <p id="lastmodified"></p>
+    </footer>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/ham_menu.js"></script>
+<script src="scripts/page-visits.js"></script>
+<script src="scripts/password.js"></script>

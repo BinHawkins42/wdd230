@@ -17,4 +17,4 @@ else if (numberOfDays < 2 ) {
     let output = "welcome back it has been" + numberOfDays;
  }
 
- document.getElementById("output").innerHTML = output;
+document.getElementById("output").innerHTML = output;
