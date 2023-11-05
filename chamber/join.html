@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branson Chamber of Commerce</title>
+    <meta name="description" content="welcome to the Branson chamber of commerce contact us at 417-999-9999">
+    <meta name="author" content="Gabriel Jones">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=East+Sea+Dokdo&family=Kanit:wght@500&family=Lora&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Branson chamber of commerce" />
+    <meta property="og:type" content="business.business"/>
+    <meta property="og:url" content="https://binhawkins42.github.io/wdd230/chamber" />
+    <meta property="og:image" content="images/branson-1-large.webp" />
+</head>
+<body>
+    <header>
+        <object data="images/logo.svg" width="400"> </object>
+        <h1>Branson Chamber of Commerce</h1>
+    </header>
+    <div id="mode">
+        🌙
+    </div>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+            <li>
+                <a href="#">Directory</a>
+            </li>
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="memberships">
+            <picture>
+                <source srcset="images/show-boat-small.webp" media="(max-width: 400px)">
+                <source srcset="images/show-boat-medium.webp" media="(max-width: 600px)">
+                <img src="images/show-boat-large.webp" style="width:100%" alt="Branson Ferris Wheel">
+            </picture>
+            <div class="gold">
+                <h2>Gold Membership</h2>
+                <p class="package-info">the Gold Memebership gives you all the best that the chamber has to offer. you get prefurd access to meeting and a seat VIP seat at all events. you also get access to better advertising and a spotlight aticale on our website</p>
+                <p>$75/mon</p>
+            </div>
+            <div class="silver">
+                <h2>Silver Membership</h2>
+                <p class="package-info">the Silver Memebership gives you some of the best that the chamber has to offer. you get good access to meetings. free tickets to events. you also get access to advertising.</p>
+                <p>$50/mon</p>
+            </div>
+            <div class="bronze">
+                <h2>Bronze Membership</h2>
+                <p class="package-info">the Broze Memebership gives you all basic access to chamber resources. you get access to meetings. a discount on tickets to events. and a discount on paid advertising</p>
+                <p>$35/mon</p>
+            </div>
+            <div class="free">
+                <h2>NP Membership (non profit organizations)</h2>
+                <p>the chamber prides its self on our support for non profit organizations in our area. this membership is a free membership to our Non profit frinds. those seeking to get a NP Membership must prove their non profit status.</p>
+            </div>
+        </div>
+        <div class="form">
+        <h1>Join the chamber</h1>
+        <form method="get" action="thankyou.html">
+            
+            <fieldset>
+                <legend>give us you name and contact info</legend>
+                <label class="top">first name*<input type="text" name="fname" required></label>
+                <label class="top">last name*<input type="text" name="lname" required></label>
+                <label class="top">Title or Position<input type="text" id="position" name="title" pattern="[-a-zA-Z]" title="Eight or more characters"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone Number*<input type="tele" name="telephone" placeholder="1235551234" required></label>
+                <label class="top">Business/Organization's name*<input type="text" name="bnume" required></label>
+                <label class="sbs"><input type="radio" name="membership-level" value="gold"> Gold Membership</label>
+                <label class="sbs"><input type="radio" name="membership-level" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership-level" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership-level" value="np"> NP Membership</label>
+                <label class="top">business/organization's description<input type="text" class="textbox" name="description" id="description"/></label>
+                <input class="timestamp" type="time" name="timestamp" step="1">
+            </fieldset>
+
+            <input type="submit" value="Join" class="submitBtn">
+        </div>
+
+    </main>
+    <footer>
+        <div class="topfooter">       
+            <p>123 Hyw 76, Branson MO 65616</p>
+            <p>call 417-999-9999</p>
+            <p>email info@bransonchamberofcommerce.com</p>
+        </div>
+        <div class="bottomfooter">
+            <object data="images/logo.svg" width="100"> </object>
+            <p id="copyright-date"></p>
+            <p>Gabriel Jones</p>
+            <p>WDD230 Project</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/dates-visited.js"></script>
+</body>
+</html>

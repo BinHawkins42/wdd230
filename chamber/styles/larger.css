@@ -224,8 +224,138 @@ a {
 .days li .active {
   padding: 5px;
   background: #8b8b8b;
-  color: white !important
+  color: rgb(255, 255, 255) !important
 }  
+
+/* join form */
+
+form fieldset {
+  margin: 2rem 2%;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+#description {
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+  border: solid 1px #999;
+}
+
+form legend {
+ color: #000000;
+ margin: 0 1rem;
+ padding: 0 .5rem; 
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #000000;
+  font-size: 1rem;
+  text-align: left;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgb(0,0,0,0.1);
+
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555; 
+  text-align: left;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #0026ff;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+#formmessage {
+  text-align: left;
+  color: white;
+  font-weight: bolder;
+}
+
+.timestamp {
+  display: none;
+}
+
+.form{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.memberships{
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+.memberships div {
+  padding: 3rem .3rem;
+  margin: 1rem .3rem;
+  border: #000000 solid .1rem;
+  border-radius: 1rem;
+}
+
+.gold {
+  background-color: darkgoldenrod;
+}
+
+.silver {
+  background-color: #999;
+}
+
+.bronze {
+  background-color: sienna;
+}
+
+.memberships div .package-info {
+  padding: 1rem 2rem;
+  margin: .5rem .3rem;
+  background-color: ghostwhite;
+  border-radius: 1rem;
+}
+
+.memberships img {
+  padding: 1rem;
+  max-width: 95%;
+}
+
+/* thank you page */
+
+.thank-you {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  padding: 1rem;
+}
 
 }
 
