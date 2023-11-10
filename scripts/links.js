@@ -16,8 +16,6 @@ async function getLinks() {
         let week = document.createElement('p');
         let url = document.createElement('a');
         let title = document.createElement('p');
-      
-      lesson.setAttribute();
 
         week.textContent = `${lessons.lesson}`;
 
