@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing:border-box;
+    line-height: 1.75rem;
+
+    max-width: 1200px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 3rem;
+
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 1rem;
+}
+
+#cards img {
+    
+    border-radius: 2rem;
+    max-width: 95%;
+}
+
+section {
+    background-color: white;
+
+    border-radius: 2rem;
+    margin: .5rem;
+}
+

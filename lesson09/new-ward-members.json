@@ -1,0 +1,33 @@
+{
+    "family-name" : "jones" ,
+    "moved-in" : "01-13-2020",
+    "number-of-members" : 5,
+    "visited-by-bishop" : "no",
+    "individuals" : [
+    {
+        "name" : "Gabe Jones",
+        "gender" : "male",
+        "birth-date" : "01-13-1989"
+    },
+    {
+        "name" : "Amanda Jones",
+        "gender" : "female",
+        "birth-date" : "08-29-1985"
+    },
+    {
+        "name" : "Jason Jones",
+        "gender" : "male",
+        "birth-date" : "03-14-2017"
+    },
+    {
+        "name" : "Jade Jones",
+        "gender" : "female",
+        "birth-date" : "08-27-2019"
+    },
+    {
+        "name" : "adam Jones",
+        "gender" : "male",
+        "birth-date" : "12-03-2022"
+    }
+         ]       
+}
