@@ -1,5 +1,6 @@
 const baseURL = "https://binhawkins42.github.io/wdd230/";
 const linksURL = "https://binhawkins42.github.io/wdd230/data/links.json";
+const weekly_links = document.querySelector('#lessons');
 
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -27,6 +28,6 @@ async function getLinks() {
         activity.appendChild(url);
         activity.appendChild(title);
   
-      linksURL.appendChild(activity);
+        weekly_links.appendChild(activity);
     });
   }
