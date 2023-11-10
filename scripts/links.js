@@ -20,9 +20,9 @@ async function getLinks() {
 
         week.textContent = `${lessons.lesson}`;
 
-        url.setAttribute('herf', `${lessons.url}`);
+        url.setAttribute('herf', `${lessons.links.url}`);
         
-        title.textContent = `${lessons.title}`;
+        title.textContent = `${lessons.links.title}`;
      
         activity.appendChild(week); 
         activity.appendChild(url);
