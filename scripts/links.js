@@ -12,7 +12,7 @@ async function getLinks() {
   const displayLinks = (lessons) => {
     lessons.forEach( (lessons) => {
 
-        let activitys = document.createElement('ol');
+        let activity = document.createElement('ol');
         let week = document.createElement('p');
         let url = document.createElement('a');
         let title = document.createElement('p');
@@ -23,10 +23,10 @@ async function getLinks() {
         
         title.textContent = `${lessons.title}`;
      
-      line.appendChild(week); 
-      line.appendChild(url);
-      line.appendChild(title);
+        activity.appendChild(week); 
+        activity.appendChild(url);
+        activity.appendChild(title);
   
-      activitys.appendChild(line);
+      linksURL.appendChild(activity);
     });
   }
