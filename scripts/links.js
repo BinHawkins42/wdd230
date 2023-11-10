@@ -9,7 +9,7 @@ async function getLinks() {
   
   getLinks();
 
-  const displaylinks = (lessons) => {
+  const displayLinks = (lessons) => {
     lessons.forEach( (lessons) => {
 
         let activitys = document.createElement('ol');
