@@ -1,7 +1,7 @@
 {
     "members": [
       {
-        "imageurl": "file:///C:/Users/user/Documents/GitHub/wdd230/chamber/images/Corporate-Badge-and-Name-White-Text-Small.png",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/Corporate-Badge-and-Name-White-Text-Small.png",
         "name": "Fritz's Adventure, LLC.",
         "address" : "1425 W. 76 Country Blvd.",
         "phonenumber" : "(417) 320-6138",
