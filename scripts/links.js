@@ -16,17 +16,15 @@ async function getLinks() {
         let activity = document.createElement('ol');
         let week = document.createElement('p');
         let url = document.createElement('a');
-        let title = document.createElement('p');
 
         week.textContent = `${lessons.lesson}`;
 
-        url.setAttribute('herf', `${links.url}`);
+        url.setAttribute('href',`${lessons.links.url}`);
+        url.textContent = `${lessons.links.title}`;
         
-        title.textContent = `${links.title}`;
      
         activity.appendChild(week); 
         activity.appendChild(url);
-        activity.appendChild(title);
   
         weekly_links.appendChild(activity);
     });
