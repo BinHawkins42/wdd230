@@ -1,6 +1,6 @@
 const baseURL = "https://binhawkins42.github.io/wdd230/";
-const url = 'https://binhawkins42.github.io/wdd230/chamber/data/members.json';
-const members = document.querySelector('.members');
+const url = "https://binhawkins42.github.io/wdd230/chamber/data/members.json";
+const businesses = document.querySelector('.members');
 
 async function getMembersData() {
     const responce = await fetch(url);
@@ -43,6 +43,6 @@ const displayMembers = (members) => {
       card.appendChild(website);
 
   
-      members.appendChild(card);
+      businesses.appendChild(card);
     });
   }
