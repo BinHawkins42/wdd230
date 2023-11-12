@@ -8,42 +8,42 @@
         "url" : "https://www.fritzsadventure.com/"
       },
       {
-        "imageurl": "../images/bigcedar.webp",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/bigcedar.webp",
         "name": "Big Cedar Lodge",
         "address" : "190 Top of the Road Rd Ridgedale MO 65739",
         "phonenumber" : "(417) 335-2777",
         "url" : "https://bigcedar.com/"
       },
       {
-        "imageurl": "../images/CoxSocialImg.2e16d0ba.fill-480x250.webp",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/CoxSocialImg.2e16d0ba.fill-480x250.webp",
         "name": "Cox Medical Center Branson",
         "address" : "525 Branson Landing Blvd And Skaggs Road",
         "phonenumber" : "(417) 335-7000",
         "url" : "https://www.coxhealth.com/"
       },
      {
-        "imageurl": "../images/Dogwood-Canyon-Logo.webp",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/Dogwood-Canyon-Logo.webp",
         "name": "Dogwood Canyon Nature Park",
         "address" : "2038 W State Hwy 86 Lampe MO 65681",
         "phonenumber" : "(800) 225-6343",
         "url" : "https://dogwoodcanyon.org/"
      },
       {
-        "imageurl": "../imegas/branson-logo.webp",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/imegas/branson-logo.webp",
         "name": "Titanic Museum Attraction",
         "address" : "3235 W 76 Hwy",
         "phonenumber" : "(417) 334-9500",
         "url" : "https://titanicbranson.com/"
       },
       {
-        "imageurl": "../images/logo_WRVEC-color.svg",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/logo_WRVEC-color.svg",
         "name": "White River Valley Electric Cooperative",
         "address" : "2449 State Hwy 76 E",
         "phonenumber" : "(417) 335-9335",
         "url" : "https://www.whiteriver.org/"
       },
       {
-        "imageurl": "../images/wonderworks-logo-402-x-90.webp",
+        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/wonderworks-logo-402-x-90.webp",
         "name": "WonderWorks Branson",
         "address" : "2835 West 76 Country Boulevard",
         "phonenumber" : "(407)513-9580",
