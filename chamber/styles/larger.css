@@ -385,9 +385,7 @@ form label.top input:required:valid {
 
 .menu {
 	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
 	text-align: center;
 }
 
@@ -400,6 +398,8 @@ section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: #eee;
+  height: 100%;
+  margin: .2rem;
 }
 
 .grid {
@@ -423,8 +423,7 @@ section {
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	display: flex;
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -453,10 +452,6 @@ section a {
 	letter-spacing: 1.1pt;
 }
 
-/* img {
-	height: 75px;
-	max-width: 100%;
-} */
 
 }
 
