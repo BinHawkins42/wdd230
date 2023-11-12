@@ -1,4 +1,5 @@
-const url = '../data/members.json';
+const baseURL = "https://binhawkins42.github.io/wdd230/";
+const url = 'https://binhawkins42.github.io/wdd230/chamber/data/members.json';
 const members = document.querySelector('.members');
 
 async function getMembersData() {
@@ -9,8 +10,8 @@ async function getMembersData() {
 
 getMembersData();
 
-const displayMembers = (Members) => {
-    Members.forEach((Members) => {
+const displayMembers = (members) => {
+    members.forEach((members) => {
 
       let card = document.createElement('section');
       let fullName = document.createElement('h3'); 
@@ -19,8 +20,8 @@ const displayMembers = (Members) => {
       let website = document.createElement('a')
       let logo = document.createElement('img');
   
-      logo.setAttribute('src', prophets.imageurl);
-      logo.setAttribute('alt', `logo for ${menbers.name}`); 
+      logo.setAttribute('src', members.imageurl);
+      logo.setAttribute('alt', `logo for ${members.name}`); 
       logo.setAttribute('loading', 'lazy');
       logo.setAttribute('width', '150');
       logo.setAttribute('height', 'auto');
@@ -42,6 +43,6 @@ const displayMembers = (Members) => {
       card.appendChild(website);
 
   
-      Members.appendChild(card);
+      members.appendChild(card);
     });
   }
