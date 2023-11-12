@@ -32,7 +32,7 @@ const displayMembers = (members) => {
 
       phone.textContent = `${members.phonenumber}`;
 
-      website.setAttribute('herf', members.url );
+      website.setAttribute('href', members.url );
 
 
   
