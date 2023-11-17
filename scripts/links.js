@@ -8,24 +8,22 @@ async function getLinks() {
     displayLinks(data.lessons);
   }
   
-  getLinks();
-
   const displayLinks = (lessons) => {
-    lessons.forEach( (lessons) => {
+    lessons.forEach((lesson) => {
 
         let activity = document.createElement('ol');
-        let week = document.createElement('p');
-        let url = document.createElement('a');
-
-        week.textContent = `${lessons.lesson}`;
-
-        url.setAttribute('href',`${lessons.links.url}`);
-        url.textContent = `${lessons.links.title}`;
-        
-     
+        let week = document.createElement('li');       
+        week.textContent = `${lesson.lesson}`;
         activity.appendChild(week); 
-        activity.appendChild(url);
-  
+
+        lesson.links.forEach((links) => { 
+          let url = document.createElement('a'); 
+          url.setAttribute('href',`${links.url}`);
+          url.textContent = `${links.title}`;
+          activity.appendChild(url);
+        });
         weekly_links.appendChild(activity);
     });
   }
+
+  getLinks();
