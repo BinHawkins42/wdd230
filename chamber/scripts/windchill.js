@@ -1,26 +1,39 @@
 
-   window.onload=function getinput() {
-    var number1 = document.getElementById("air-temp");
 
-    var val1 = number1.innerHTML;
-    console.log('val1:',typeof val1);
+const currentTemp = document.querySelector('#current-temp');
+const windChill = document.querySelector('#windChill');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-    var T = parseInt(val1);
-    console.log('T:', typeof T);
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=36.70&lon=-93.21&appid=ffbdc82e21c26c6f1453aa3a21f77a5a&units=imperial';
 
-    var number2 = document.getElementById("wind-speed");
 
-    var val2 = number2.innerHTML;
-    console.log('val2:',typeof val2);
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResults(data);
+    } else {
+        throw Error (await response.text());
+    }
+} catch (error) {
+    console.log(error);
+}
+}
 
-    var S = parseInt(val1);
-    console.log('S:', typeof S);
+apiFetch();
 
-    let windcilltemp = windChill(T, S);
+function displayResults(data) {
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    windChill.innerHTML = `${data.main.feels_like}&deg;F`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = `${desc}`;
+}
 
-    document.getElementById("windchill").innerHTML = windcilltemp.toFixed(2);
-   }
-  function windChill(tempF, speed){
-    let windChill = 35.74 + (0.6215 * tempF) - (35.75 * (speed ** 0.16)) + (0.4275 * tempF * (speed ** 0.16));
-    return windChill;
-  }
+
+

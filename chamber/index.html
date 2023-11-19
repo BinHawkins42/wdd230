@@ -26,6 +26,7 @@
     <div id="mode">
         🌙
     </div>
+   
     <a id="menu" href="#"></a>
     <nav>
         <ul>
@@ -43,6 +44,18 @@
             </li>
         </ul>
     </nav>
+    <div class="banner">
+        <div class="banner__content">
+            <div class="banner__text">
+                <strong>Don't miss out</strong> Come to our Chamber meet and greet on Wednesday at 7:00pm.
+            </div>
+            <button class="banner__close" type="button">
+                <span class="material-icon">
+                    ❌
+                </span>
+            </button>
+        </div>
+    </div>
     <main>
        <!-- Container for the image gallery -->
         <div class="gallory">
@@ -61,14 +74,19 @@
         <div class="weather">
             
             <h2>Local Weather Forcast</h2>
-            <img src="images/partly-cloudy.webp" alt="partly cloudy icon" width="100">
+            <img id="weather-icon" src="" alt="" width="100">
             <div>
-            <p id="air-temp">76</p>
-            <p>℉</p> 
-            <p id="wind-speed">1</p>
-            <p>mph</p>
-            <p>windchill</p><div id="windchill"></div>
-            <p>partly cloudy</p>
+            Current temperature<h3 id="current-temp"></h3>
+            Wind Chill temperature<h3 id="windChill"></h3>
+            <div>
+                <h3 id="dayone"></h3>
+                <h3 id="daytwo"></h3>
+                <h3 id="daythree"></h3>
+
+
+            </div>
+
+
             </div>
         </div>
         <!-- Local events -->
@@ -105,5 +123,7 @@
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/dates-visited.js"></script>
+    <script src="scripts/weather_forcast.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
