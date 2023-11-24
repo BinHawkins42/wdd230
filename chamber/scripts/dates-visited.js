@@ -1,4 +1,4 @@
-const msToDay = 84600000;
+const msToDays = 84600000;
 
 let theDateToday = Date.now();
 let lastVisit = Number(window.localStorage.getItem('visitDate')) || Date.now();

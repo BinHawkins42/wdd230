@@ -1,6 +1,6 @@
 const baseURL = "https://binhawkins42.github.io/wdd230/";
 const url = "https://binhawkins42.github.io/wdd230/chamber/data/members.json";
-const businesses = document.querySelector('.members');
+const businesses = document.querySelector('.grid');
 
 async function getMembersData() {
     const responce = await fetch(url);
@@ -51,7 +51,7 @@ const displayMembers = (members) => {
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector(".grid");
 
 
 gridbutton.addEventListener("click", () => {
