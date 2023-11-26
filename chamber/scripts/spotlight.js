@@ -7,7 +7,7 @@ async function getMembersData(Url) {
     try {
         const response = await fetch(Url);
         const data = await response.json();
-        displaySpotlightMembers(data.members);
+        displaySpotlightMembers(data);
     } catch (error) {
         console.error('Error fetching or processing data:', error);
     }
@@ -18,16 +18,16 @@ function getRandomMembers(data, count) {
     return shuffledMembers.slice(0, count);
 }
 
-function displaySpotlightMembers(members) {
-    const spotlightMembers = getRandomMembers(members, 3);
+function displaySpotlightMembers(data) {
+    const spotlightMembers = getRandomMembers(data, 3);
 
-    spotlightMembers.forEach(members => {
-        const card = createSpotlightCard(members);
+    spotlightMembers.forEach(data => {
+        const card = createSpotlightCard(data);
         spotlightContainer.appendChild(card);
     });
 }
 
-function createSpotlightCard(members) {
+function createSpotlightCard(data) {
    
 
       let card = document.createElement('div');
@@ -40,22 +40,22 @@ function createSpotlightCard(members) {
       let logo = document.createElement('img');
       let level = document.createElement('h3')
   
-      logo.setAttribute('src', members.imageurl);
-      logo.setAttribute('alt', `logo for ${members.name}`); 
+      logo.setAttribute('src', data.imageurl);
+      logo.setAttribute('alt', `logo for ${data.name}`); 
       logo.setAttribute('loading', 'lazy');
       logo.setAttribute('width', '150');
       logo.setAttribute('height', 'auto');
       
-      fullName.textContent = `${members.name}`; 
+      fullName.textContent = `${data.name}`; 
 
-      address.textContent = `${members.address}`;
+      address.textContent = `${data.address}`;
 
-      phone.textContent = `${members.phonenumber}`;
+      phone.textContent = `${data.phonenumber}`;
 
-      website.setAttribute('href', members.url );
-      website.textContent = `${members.name} website`;
+      website.setAttribute('href', data.url );
+      website.textContent = `${data.name} website`;
 
-      level.textContent = `${members.level}`;
+      level.textContent = `${data.level}`;
   
       card.appendChild(logo);
       card.appendChild(fullName); 
