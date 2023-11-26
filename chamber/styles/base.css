@@ -518,35 +518,37 @@ section a {
 
 /* banner */
 
-.banner {
+#banner {
   background:var(--blue);
   grid-column: 1/4;
+  display: flex;
 }
 
-.banner__content {
+#banner div {
   padding: 16px;
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
   align-items: center;
 }
 
-.banner__text {
-  flex-grow: 1;
+#banner {
+  flex-grow: 2;
   line-height: 1.4;
 }
 
-.banner__close {
+#banner__close {
   background: none;
   border: none;
   cursor: pointer;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.banner__close span {
+#banner {
   color:var(--white);
 }
 
-.banner__text,
-.banner_close > span {
+
+.banner {
   color:var(--white);
 }

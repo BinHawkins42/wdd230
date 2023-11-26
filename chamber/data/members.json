@@ -1,6 +1,5 @@
-{
-    "members": [
-      {
+[
+    {
         "imageurl": "https://binhawkins42.github.io/wdd230/chamber/images/Corporate-Badge-and-Name-White-Text-Small.png",
         "name": "Fritz's Adventure, LLC.",
         "address" : "1425 W. 76 Country Blvd.",
@@ -33,7 +32,7 @@
         "level" : "Silver"
      },
       {
-        "imageurl": "https://binhawkins42.github.io/wdd230/chamber/imegas/TitanicBransonLogo_1200x.webp",
+        "imageurl": "https://binhawkins42.github.io/wdd230/main/chamber/images/TitanicBransonLogo_1200x.webp",
         "name": "Titanic Museum Attraction",
         "address" : "3235 W 76 Hwy",
         "phonenumber" : "(417) 334-9500",
@@ -56,6 +55,5 @@
         "url" : "https://www.wonderworksonline.com/branson/",
         "level" : "Bronze"
       }
-
     ]
-}
+    
