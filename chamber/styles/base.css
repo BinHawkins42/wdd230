@@ -127,6 +127,10 @@ nav a:hover, nav a:active {
 
 }
 
+#spotlight a {
+  color: var(--black)
+}
+
 nav a {
   display: flex;
   background-color: var(--blue);
