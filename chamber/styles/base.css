@@ -102,11 +102,10 @@ nav a:hover, nav a:active {
 
 .currentPage {
     background-color: var(--orange);
+    color: var(--black)
 }
 
-.currentPage a {
-   color: var(--black)
-}
+
 
 .gallory {
 
