@@ -42,6 +42,14 @@ main {
     margin-top: 2rem;
 }
 
+.article p {
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+
+
 #menu {
 	display: block;
 	font-size: 2rem;
@@ -106,7 +114,21 @@ nav a:hover, nav a:active {
     padding: .3rem;
 }
 
-nav li {
+.gallory .button {
+  position: absolute;
+  top: 30rem;
+  right: 38%;
+  background-color: var(--orange);
+  border: .1rem solid var(--black);
+  border-radius: 1rem;
+  color: var(--black);
+  padding: 1rem 2rem;
+  font-size: larger;
+ 
+
+}
+
+nav a {
   display: flex;
   background-color: var(--blue);
 

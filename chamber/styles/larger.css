@@ -51,6 +51,13 @@ main {
     padding: .3rem;
 }
 
+.gallory .button {
+  position: absolute;
+  top: 30rem;
+  right: 35%;
+
+}
+
 .gallory picture {
     max-width: 1200px;
 }

@@ -1,5 +1,11 @@
 @media screen and (min-width: 400px) {
  
+  .gallory .button {
+    position: absolute;
+    top: 30rem;
+    right: 45%;
+  }
+
 /* join form */
 
 
