@@ -180,6 +180,7 @@ main {
 .card {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: 2rem;
     max-width: 75%;
     background-color: var(--white);

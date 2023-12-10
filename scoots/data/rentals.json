@@ -3,36 +3,42 @@
         "imageurl": "https://binhawkins42.github.io/wdd230/scoots/images/honda-1seat.jpg",
         "name": "Honda Metropolitan",
         "riders" : "1 person",
-        "CC" : "49cc"
+        "CC" : "49cc",
+        "price" : "$20 for halfday - $30 for fullday"
       },
       {
         "imageurl": "https://binhawkins42.github.io/wdd230/scoots/images/honda-2seat-110cc.webp",
         "name": "Honda Dio",
         "riders" : "2 people",
-        "CC" : "110cc"
+        "CC" : "110cc",
+        "price" : "$30 for halfday - $40 for fullday"
       },
       {
         "imageurl": "https://binhawkins42.github.io/wdd230/scoots/images/honda-2seat-149cc.webp",
         "name": "Honda PCX150",
         "riders" : "2 people",
-        "CC" : "149cc"
+        "CC" : "149cc",
+        "price" : "$40 for halfday - $50 for fullday"
       },
       {
         "imageurl": "https://binhawkins42.github.io/wdd230/scoots/images/side-by-side-ATV_promo.jpg",
         "name": "Honda Pioneer 1000",
         "riders" : "4 people",
-        "CC" : "999cc"
+        "CC" : "999cc",
+        "price" : "$50 for halfday - $70 for fullday"
       },
       {
         "imageurl": "https://binhawkins42.github.io/wdd230/scoots/images/jeep-4door.jpg",
         "name": "Jeep Wrangler - 4 door",
         "riders" : "5 people",
-        "CC" : "Manuel with A/C"
+        "CC" : "Manuel with A/C",
+        "price" : "$70 for halfday - $100 for fullday"
       },
       {
         "imageurl": "https://binhawkins42.github.io/wdd230/scoots/images/jeep-2door.webp",
         "name": "Jeep Wrangler - 2 door",
         "riders" : "4 people",
-        "CC" : "Manuel and open to the air"
+        "CC" : "Manuel and open to the air",
+        "price" : "$60 for halfday - $85 for fullday"
       }
     ]

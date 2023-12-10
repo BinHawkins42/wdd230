@@ -22,7 +22,7 @@ const displayMembers = (data) => {
       image.setAttribute('src', data.imageurl);
       image.setAttribute('alt', `logo for ${data.name}`); 
       image.setAttribute('loading', 'lazy');
-      image.setAttribute('width', '150');
+      image.setAttribute('width', '300');
       image.setAttribute('height', 'auto');
       
       fullName.textContent = `${data.name}`; 
