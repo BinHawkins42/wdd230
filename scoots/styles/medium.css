@@ -1,0 +1,8 @@
+@media screen and (min-width: 800px) {
+    body {
+        background-image: url("../images/background_medium.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+}

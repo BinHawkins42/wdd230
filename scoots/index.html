@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooters Motor Rentals</title>
+    <meta name="description" content="Welcome to Scooters Motor rentals. We are your ticket to the rest of the island">
+    <meta name="author" content="Gabriel Jones">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <meta property="og:type" content="business.business"/>
+    <meta property="og:url" content="https://binhawkins42.github.io/wdd230/scooter" />
+    <meta property="og:image" content="images/jeep-for-rent.webp"/>
+</head>
+<body>
+
+
+    <nav class="nav">
+        <div class="nav_content">
+            <div>
+                <picture>
+                    <source srcset="images/scooter_logo_small.webp" media="(max-width: 50px)">
+                    <source srcset="images/scooter_logo_medium.webp" media="(max-width: 100px)">
+                    <img class="logo" src="images/scooter_logo_large.webp" alt="logo for scooters" width="150">
+                </picture> 
+                <h1>Scooters</h1>
+            </div>
+           <a id="menu" href="#"></a>        
+           <ul class="nav_buttons">
+               <a class="currentPage" href="index.html">Home</a>
+               <a href="rentals.html">Rentals</a>
+               <a href="reservations.html">Reservations</a>
+               <a href="contact.html">Contact Us</a>
+           </ul>
+           <div class="contact_info">
+               <h3>address</h3>
+               <p>5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77600 Cozumel, Q.R., Mexico</p>
+               <h3>Phone number</h3>
+               <p>+529871131706</p> 
+           </div>
+       </div>
+   </nav>
+    <header>
+        <picture>
+            <source srcset="images/hero_image_small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero_image_medium.webp" media="(max-width: 900px)">
+            <img src="images/hero_image_large.webp" style="width: 100%" alt="lady standing on jeep with sunset">
+        </picture>
+        <h1>Expand your vacation</h1>
+        <a class="button" href="reservations.html">Reserve Now</a>
+    </header>
+    <div class="banner">
+        <div>
+        <h3 class="weather_alert"></h3>
+        <button class="close_banner">
+            <span class="banner">
+                X
+            </span>
+        </button>
+        </div>
+    </div>
+    <main>
+        <a class="card" href="rentals.html">
+            <picture>
+                <source srcset="images/scooter_small.webp" media="(max-width: 200px)">
+                <source srcset="images/scooter_medium.webp" media="(max-width: 300px)">
+                <img src="images/scooter_large.webp" style="width: 500" alt="scooter on the beach" loading="lazy">
+            </picture>
+            <div>
+                <h2>Scooters</h2>
+                <p>Explore the island by your self or with a friend on one of our meny scooters. great for going out on the town and see our wonderful night life or going to a near by beach. Reserve one today. </p>
+            </div>
+        </a>
+        <a Class="card" href="rentals.html">
+            <div>
+                <h2>Side-by-side ATVs</h2>
+                <p>looking for something with a little more room but not going too far form your resort. our side-by-side ATVs are perfect for going on a short adventure with a little cargo. Reserve one today.</p>
+            </div>
+            <picture>
+                <source srcset="images/side_by_side_atv_small.webp" media="(max-width: 200px)">
+                <source srcset="images/side_by_side_atv_medium.webp" media="(max-width: 300px)">
+                <img src="images/side_by_side_atv_large.webp" style="width: 500" alt="A side-by-side ATV siting on a beach" loading="lazy">
+            </picture>
+        </a>
+        <a Class="card" href="rentals.html">
+            <picture>
+                <source srcset="images/jeep_small.webp" media="(max-width: 200px)">
+                <source srcset="images/jeep_medium.webp" media="(max-width: 300px)">
+                <img src="images/jeep_large.webp" style="width: 500" alt="jeeps driving along the beach" loading="lazy">
+            </picture>
+            <div>
+                <h2>Jeeps</h2>
+                <p>Need something for a longer trip away from the resort. really want to see that beach on the other side of the island. look no further then our Jeep selection. A Jeep can get you anywhere on the island on a single tank of gas. Reserve one today.</p>
+            </div>
+        </a>
+        <a class="card" href="reservations.html">
+            <div class="bottom_action">
+            <h2>get the most out of your vacation</h2>
+            <p>Reserve your ride today</p>
+            </div>
+        </a>
+        <div class="weather">
+            
+            <h2>Local Weather</h2>
+            <div class="weather_content">
+                <div class="weather_content_left">
+                <img id="weather-icon" src="" alt="" width="100">
+                <h2 id="current-weather"></h2>
+                Current temperature<h3 id="current-temp"></h3>
+                Humidity<h3 id="humidity"></h3>
+                </div>
+                <div class="weather_content_right">
+                    <h2>three day forcast</h2>
+                    <div id="forecast-day-1"></div>
+                    <div id="forecast-day-2"></div>
+                    <div id="forecast-day-3"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+ 
+        <div class="bottomfooter">
+            <p id="copyright-date"></p>
+            <p>Gabriel Jones</p>
+            <p>WDD230 Project</p>
+            <p id="lastmodified"></p>     
+            <p>123 Hyw 76, Branson MO 65616</p>
+            <p>call 417-999-9999</p>
+            <p>email info@bransonchamberofcommerce.com</p>
+            <picture>
+                <source srcset="images/scooter_logo_small.webp" media="(max-width: 15px)">
+                <source srcset="images/scooter_logo_medium.webp" media="(max-width: 50px)">
+                <img class="logo" src="images/scooter_logo_large.webp" alt="logo for scooters" width="100">
+            </picture>
+        </div>
+
+    </footer>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather_forcast.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+</body>
+</html>
