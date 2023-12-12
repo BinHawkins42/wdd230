@@ -331,3 +331,22 @@ main {
 .bottomfooter img {
     padding-left: 1rem;
 }
+
+/* price table */
+
+.price_table {
+    margin: 2rem;
+    margin-right: 20%;
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.price_table table {
+    width: 100%;
+    font-size: xx-large;
+}
+
+.price_table table td {
+    padding: .5rem;
+}
