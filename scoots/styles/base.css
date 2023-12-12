@@ -177,6 +177,8 @@ main {
 
 }
 
+
+
 .card {
     display: flex;
     flex-direction: column;
@@ -212,6 +214,23 @@ main {
 .card .bottom_action {
     text-align: center;
     padding: 0 25%;
+}
+
+.card section p, .card section h3 {
+    font-size: xx-large;
+}
+
+.card section {
+    padding: 0 20%;
+}
+
+.card {
+    margin-left: 8rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr, auto;
 }
 
 /* banner */

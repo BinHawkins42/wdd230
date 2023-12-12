@@ -167,6 +167,14 @@ main {
     padding: 0 25%;
 }
 
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.card section {
+    padding: 1rem;
+}
+
 /* banner */
 
 .banner div {

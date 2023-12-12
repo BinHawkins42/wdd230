@@ -17,12 +17,13 @@ const displayMembers = (data) => {
       let fullName = document.createElement('h3'); 
       let riders = document.createElement('p');
       let cc = document.createElement('p');
+      let price = document.createElement('p')
       let image = document.createElement('img');
   
       image.setAttribute('src', data.imageurl);
       image.setAttribute('alt', `logo for ${data.name}`); 
       image.setAttribute('loading', 'lazy');
-      image.setAttribute('width', '300');
+      image.setAttribute('width', '400');
       image.setAttribute('height', 'auto');
       
       fullName.textContent = `${data.name}`; 
@@ -31,13 +32,14 @@ const displayMembers = (data) => {
 
       cc.textContent = `${data.CC}`;
 
-
+      price.textContent = `${data.price}`;
 
   
       card.appendChild(image);
       card.appendChild(fullName); 
       card.appendChild(riders);
       card.appendChild(cc);
+      card.appendChild(price);
 
   
       businesses.appendChild(card);
