@@ -45,7 +45,103 @@
        </div>
    </nav>
     <main>
+        <div class="card">
+        <div class="Reservation_form">
+            <h1>Reservation form</h1>
+            <form method="get" action="thank_you_reservation.html">
+            <fieldset>
+            <div class="form_feild">
+                <label for="first_name" class="top">First name<span class="required">*</span></label>
+                <input type="text" class="form-control" name="first_name" access="false" id="first_name" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="last_name" class="top">Last name<span class="required">*</span></label>
+                <input type="text" class="form-control" name="last_name" access="false" id="last_name" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="phone_number" class="top">Phone number<span class="required">*</span></label>
+                <input type="tel" placeholder="999-999-9999" class="form-control" name="phone_number" access="false" id="phone_number" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="email" class="top">Email address<span class="required">*</span></label>
+                <input type="email" placeholder="youname@email.com" class="form-control" name="email" access="false" id="email" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="home_location" class="top">Home state or country<span class="required">*</span></label>
+                <input type="text" placeholder="Mexico" class="form-control" name="home_location" access="false" id="home_location" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="cruise" class="top">Cruise line if applicable</label>
+                <input type="text" class="form-control" name="cruise" access="false" id="cruise">
+            </div>
+            <div class="form_feild">
+                <label for="date" class="top">Date of rental<span class="required">*</span></label>
+                <input type="date" class="form-control" name="date" access="false" id="date" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="number_of_rentals" class="top">Number of days renting<span class="required">*</span></label>
+                <input type="number" class="form-control" name="number_of_rentals" access="false" id="number_of_rentals" required="required" aria-required="true">
+            </div>
+            <div class="form_feild">
+                <label for="radio-group" class="top">Type of rental<span class="required">*</span></label>
+                <div class="radio-group">
+                    <div class="radio_element">
+                        <input name="rental_type" value="honda_metro" id="honda_metro" type="radio">
+                        <label for="honda_metro">~Honda Metro Scooter</label>
+                    </div>
+                    <div class="radio_element">
+                        <input name="rental_type" value="honda_dio" id="honda_dio" type="radio">
+                        <label for="honda_dio">~Honda Dio Scooter</label>
+                    </div>
+                    <div class="radio_element">
+                        <input name="rental_type" value="honda_pcx" id="honda_pcx" type="radio">
+                        <label for="honda_pcx">~Honda PCX150 Scooter</label>
+                    </div>
+                    <div class="radio_element">
+                        <input name="rental_type" value="honda_pioneer" id="honda_pioneer" type="radio">
+                        <label for="honda_pioneer">Honda Pioneer ATV</label>
+                    </div>
+                    <div class="radio_element">
+                        <input name="rental_type" value="jeep_wrangler_four" id="jeep_wrangler_four" type="radio">
+                        <label for="jeep_wrangler_four">Jeep Wrangler - 4 door with a/c</label>
+                    </div>
+                    <div class="radio_element">
+                        <input name="rental_type" value="jeep_wrangler_two" id="jeep_wrangler_two" type="radio">
+                        <label for="jeep_wrangler_two">Jeep Wrangler - 2 door</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form_feild">
+                <label for="comments" class="top">Special accommodations</label>
+                <textarea type="textarea" class="form-control" name="comments" access="false" maxlength="250" id="comments"></textarea>
+            </div>
+        </fieldset>
 
+                <input type="submit" class="btn-success" value="Book Now">
+
+        </form>
+        </div>
+        <div class="agreements">
+            <picture>
+                <source srcset="images/description_small.webp" media="(max-width: 200px)">
+                <source srcset="images/description_medium.webp" media="(max-width: 300px)">
+                <img src="images/destraction_large.webp" alt="logo for scooters" width="500">
+            </picture> 
+            <h1>Rental Services and Agreements</h1>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
+    </div>
     </main>
     <footer>
  

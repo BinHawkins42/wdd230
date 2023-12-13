@@ -173,6 +173,7 @@ main {
 }
 .card section {
     padding: 1rem;
+    color: var(--black)
 }
 
 /* banner */
@@ -187,4 +188,83 @@ main {
     font-size: medium;
     text-align: center;
   }
+
+  /* form */
+  
+fieldset .form_feild .top, fieldset div {
+    font-size: 1rem;
+  }
+
+  fieldset div .radio-group .radio_element {
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 1rem;
+  } 
+
+  fieldset .form_feild .form-control {
+    font-size: 1rem;
+ }
+
+  fieldset div .radio-group .radio_element input {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  
+  .Reservation_form .btn-success, .contact_form div .btn-success {
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  
+  fieldset div .form-control:required {
+    border-left: var(--red) solid 6px;
+  }
+  
+  fieldset div .form-control:required:valid {
+    border-left: var(--lightblue) solid 6px;
+  }
+  
+  #formmessage {
+    text-align: left;
+    color: var(--black);
+    font-weight: bolder;
+  }
+  
+  .timestamp {
+    display: none;
+  }
+  
+  .textbox {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--lightgray);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--lightgray);
+  }
+
+  .agreements h1 {
+    font-size: x-large;
+  }
+
+  .agreements ul li {
+    font-size: large;
+  }
+
+  /* map */
+
+  iframe {
+    height: 450px;
+  }
 }
+

@@ -7,7 +7,7 @@ html {
     --red: #920709;
     --black: black;
     --white: white;
-
+    --lightgray: rgb(204, 204, 204);
 }
 
 *{
@@ -233,6 +233,25 @@ main {
     grid-template-columns: 1fr, auto;
 }
 
+/* button sending people to reservations */
+
+.button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem;
+    max-width: 75%;
+    background-color: var(--red);
+    padding: .5rem;
+    border-radius: 2rem;
+}
+
+.button h2, .button p {
+    text-align: center;
+    font-size: xx-large;
+    color: var(--white)
+}
+
 /* banner */
 
 .banner div {
@@ -345,8 +364,123 @@ main {
 .price_table table {
     width: 100%;
     font-size: xx-large;
+    color: var(--black)
 }
 
 .price_table table td {
     padding: .5rem;
 }
+
+/* form */
+
+.Reservation_form h1{
+    font-size: 3rem;
+}
+
+form fieldset {
+    margin: 2rem 2%;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: .5rem 2%;
+  }
+  
+  
+  fieldset .form_feild .top, fieldset div {
+    display: block;
+    color: var(--black);
+    font-size: 4rem;
+    text-align: left;
+  }
+  
+  fieldset .form_feild .form-control {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 3rem;
+    border: solid 1px var(--black);
+    border-radius: 4px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 40rem;
+    background-color: var(--lightgray);
+  
+  }
+
+  fieldset div .radio-group {
+    margin: 1rem 0;
+    padding: 0;
+  } 
+
+  fieldset div .radio-group .radio_element {
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 3rem;
+  } 
+
+  fieldset div .radio-group .radio_element input {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem; 
+  }
+  
+  fieldset div label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: var(--lightgray); 
+    text-align: left;
+  }
+  
+  .Reservation_form .btn-success, .contact_form div .btn-success {
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem 2.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  
+  fieldset div .form-control:required {
+    border-left: var(--red) solid 6px;
+  }
+  
+  fieldset div .form-control:required:valid {
+    border-left: var(--lightblue) solid 6px;
+  }
+  
+  #formmessage {
+    text-align: left;
+    color: var(--black);
+    font-weight: bolder;
+  }
+  
+  .timestamp {
+    display: none;
+  }
+  
+  .textbox {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--lightgray);
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--lightgray);
+  }
+
+  .agreements h1 {
+    font-size: 3rem;
+  }
+
+  .agreements ul li {
+    font-size: 2rem;
+  }
+
+  /* map */
+
+  iframe {
+    height: 900px;
+  }
