@@ -230,7 +230,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr, auto;
+    grid-template-columns: 1fr auto;
 }
 
 /* button sending people to reservations */
