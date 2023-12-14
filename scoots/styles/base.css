@@ -142,7 +142,7 @@ header img {
 
 }
 
-.nav_content ul .currentPage {
+.nav_content div .currentPage {
     background-color: var(--red);
     color: var(--white);
 }

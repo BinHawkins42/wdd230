@@ -61,7 +61,7 @@ header h1 {
 
 }
 
-.nav_content ul{
+.nav_content .nav_buttons{
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@ header h1 {
 
 }
 
-.nav_content ul .currentPage {
+.nav_content .nav_buttons .currentPage {
     background-color: var(--red);
     color: var(--white);
 }
