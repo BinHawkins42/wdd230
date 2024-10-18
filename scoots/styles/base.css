@@ -335,6 +335,10 @@ main {
 
 }
 
+.bottomfooter a {
+	color: var(--white);
+}
+
 .bottomfooter {
     display: flex;
     flex-direction: row;
